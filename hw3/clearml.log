@@ -1,0 +1,130 @@
+ClearML Task: created new task id=16527f1bc78e4f51acff93b30c7e8942
+ClearML results page: https://app.clear.ml/projects/06827e2c7c694167ac13e87f8daeba11/experiments/16527f1bc78e4f51acff93b30c7e8942/output/log
+ClearML pipeline page: https://app.clear.ml/pipelines/06827e2c7c694167ac13e87f8daeba11/experiments/16527f1bc78e4f51acff93b30c7e8942
+Launching the next 1 steps
+Launching step [1. FastQC]
+Launching step: 1. FastQC
+Parameters:
+{'kwargs/reads_path': 'SRR31649172.fastq'}
+Configurations:
+{}
+Overrides:
+{}
+ClearML results page: https://app.clear.ml/projects/06827e2c7c694167ac13e87f8daeba11/experiments/3a1410ed648b450da11d805584e955b5/output/log
+ClearML Monitor: GPU monitoring failed getting GPU reading, switching off GPU monitoring
+Launching the next 1 steps
+Launching step [2. BWA Index]
+Launching step: 2. BWA Index
+Parameters:
+{'kwargs/reference_path': 'ecoli_ref.fa'}
+Configurations:
+{}
+Overrides:
+{}
+ClearML results page: https://app.clear.ml/projects/06827e2c7c694167ac13e87f8daeba11/experiments/339a2ef9877045f68ac5679f687a9720/output/log
+[bwa_index] Pack FASTA... 0.04 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 1.36 seconds elapse.
+[bwa_index] Update BWT... 0.03 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.57 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index ecoli_ref.fa
+[main] Real time: 2.070 sec; CPU: 2.032 sec
+ClearML Monitor: GPU monitoring failed getting GPU reading, switching off GPU monitoring
+Launching the next 1 steps
+Launching step [3. BWA Alignment]
+Launching step: 3. BWA Alignment
+Parameters:
+{'kwargs/reference_path': 'ecoli_ref.fa', 'kwargs/reads_path': 'SRR31649172.fastq'}
+Configurations:
+{}
+Overrides:
+{}
+ClearML results page: https://app.clear.ml/projects/06827e2c7c694167ac13e87f8daeba11/experiments/3b77229b9a3441c1b1f66ebbc7a7f6db/output/log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 33652 sequences (10000361 bp)...
+[M::process] read 33628 sequences (10000429 bp)...
+ClearML Monitor: GPU monitoring failed getting GPU reading, switching off GPU monitoring
+[M::mem_process_seqs] Processed 33652 reads in 7.954 CPU sec, 7.922 real sec
+[M::process] read 33646 sequences (10000580 bp)...
+[M::mem_process_seqs] Processed 33628 reads in 7.891 CPU sec, 7.789 real sec
+[M::process] read 33674 sequences (10000504 bp)...
+[M::mem_process_seqs] Processed 33646 reads in 7.910 CPU sec, 7.797 real sec
+[M::process] read 33656 sequences (10000579 bp)...
+[M::mem_process_seqs] Processed 33674 reads in 7.733 CPU sec, 7.606 real sec
+[M::process] read 33644 sequences (10000367 bp)...
+[M::mem_process_seqs] Processed 33656 reads in 7.677 CPU sec, 7.559 real sec
+[M::process] read 33648 sequences (10000100 bp)...
+[M::mem_process_seqs] Processed 33644 reads in 7.846 CPU sec, 7.717 real sec
+[M::process] read 33636 sequences (10000126 bp)...
+[M::mem_process_seqs] Processed 33648 reads in 7.853 CPU sec, 7.758 real sec
+[M::process] read 33640 sequences (10000430 bp)...
+[M::mem_process_seqs] Processed 33636 reads in 8.232 CPU sec, 8.159 real sec
+[M::process] read 33624 sequences (10000254 bp)...
+[M::mem_process_seqs] Processed 33640 reads in 7.544 CPU sec, 7.434 real sec
+[M::process] read 33634 sequences (10000246 bp)...
+[M::mem_process_seqs] Processed 33624 reads in 7.719 CPU sec, 7.599 real sec
+[M::process] read 33610 sequences (10000386 bp)...
+[M::mem_process_seqs] Processed 33634 reads in 7.719 CPU sec, 7.595 real sec
+[M::process] read 33630 sequences (10000495 bp)...
+[M::mem_process_seqs] Processed 33610 reads in 7.866 CPU sec, 7.742 real sec
+[M::process] read 33596 sequences (10000586 bp)...
+[M::mem_process_seqs] Processed 33630 reads in 8.814 CPU sec, 8.712 real sec
+[M::process] read 33602 sequences (10000332 bp)...
+[M::mem_process_seqs] Processed 33596 reads in 7.826 CPU sec, 7.729 real sec
+[M::process] read 33612 sequences (10000491 bp)...
+[M::mem_process_seqs] Processed 33602 reads in 8.046 CPU sec, 7.941 real sec
+[M::process] read 33594 sequences (10000405 bp)...
+[M::mem_process_seqs] Processed 33612 reads in 8.006 CPU sec, 7.887 real sec
+[M::process] read 33626 sequences (10000090 bp)...
+[M::mem_process_seqs] Processed 33594 reads in 7.561 CPU sec, 7.447 real sec
+[M::process] read 33596 sequences (10000379 bp)...
+[M::mem_process_seqs] Processed 33626 reads in 7.847 CPU sec, 7.724 real sec
+[M::process] read 33630 sequences (10000294 bp)...
+[M::mem_process_seqs] Processed 33596 reads in 8.060 CPU sec, 7.946 real sec
+[M::process] read 33596 sequences (10000141 bp)...
+[M::mem_process_seqs] Processed 33630 reads in 7.911 CPU sec, 7.792 real sec
+[M::process] read 33614 sequences (10000479 bp)...
+[M::mem_process_seqs] Processed 33596 reads in 7.688 CPU sec, 7.558 real sec
+[M::process] read 33610 sequences (10000447 bp)...
+[M::mem_process_seqs] Processed 33614 reads in 7.720 CPU sec, 7.608 real sec
+[M::process] read 33602 sequences (10000582 bp)...
+[M::mem_process_seqs] Processed 33610 reads in 7.851 CPU sec, 7.734 real sec
+[M::process] read 33598 sequences (10000445 bp)...
+ClearML Monitor: Could not detect iteration reporting, falling back to iterations as seconds-from-start
+[M::mem_process_seqs] Processed 33602 reads in 7.895 CPU sec, 7.779 real sec
+[M::process] read 33582 sequences (10000025 bp)...
+[M::mem_process_seqs] Processed 33598 reads in 7.732 CPU sec, 7.589 real sec
+[M::process] read 33580 sequences (10000426 bp)...
+[M::mem_process_seqs] Processed 33582 reads in 7.990 CPU sec, 7.891 real sec
+[M::process] read 33574 sequences (10000345 bp)...
+[M::mem_process_seqs] Processed 33580 reads in 7.742 CPU sec, 7.641 real sec
+[M::process] read 33582 sequences (10000543 bp)...
+[M::mem_process_seqs] Processed 33574 reads in 7.957 CPU sec, 7.841 real sec
+[M::process] read 33548 sequences (10000598 bp)...
+[M::mem_process_seqs] Processed 33582 reads in 7.730 CPU sec, 7.608 real sec
+[M::process] read 33566 sequences (10000320 bp)...
+[M::mem_process_seqs] Processed 33548 reads in 7.834 CPU sec, 7.713 real sec
+[M::process] read 33548 sequences (10000011 bp)...
+[M::mem_process_seqs] Processed 33566 reads in 7.871 CPU sec, 7.744 real sec
+[M::process] read 9386 sequences (2800878 bp)...
+[M::mem_process_seqs] Processed 33548 reads in 8.207 CPU sec, 8.128 real sec
+[M::mem_process_seqs] Processed 9386 reads in 2.385 CPU sec, 2.287 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem ecoli_ref.fa SRR31649172.fastq
+[main] Real time: 251.147 sec; CPU: 254.766 sec
+Launching the next 1 steps
+Launching step [4. Samtools Flagstat]
+Launching step: 4. Samtools Flagstat
+Parameters:
+None
+Configurations:
+{}
+Overrides:
+{}
+ClearML results page: https://app.clear.ml/projects/06827e2c7c694167ac13e87f8daeba11/experiments/640fe2a17abb4472b4313327e6d6ccb6/output/log
+Mapped 95.07%
+OK
+ClearML Monitor: GPU monitoring failed getting GPU reading, switching off GPU monitoring
+Launching the next 0 steps
