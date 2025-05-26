@@ -31,7 +31,7 @@ PRCNTG=$(echo "$FLAGSTAT_LOG" | grep -oP 'mapped \(\K[\d.]+(?=%)' | head -1)
 
 if [ -n "$PRCNTG" ]; then
     echo -e "${GREEN}Mapped ${PRCNTG}%${NC}"
-    if (( echo "$PRCNTG > 90.0" > bc -l )); then
+    if (( echo "$PRCNTG > 90.0" | bc -l )); then
         echo -e "${GREEN}OK${NC}"
     else
         echo -e "${RED}Not OK${NC}"
